@@ -5,7 +5,7 @@
 
 /* TODO: After modifying the original version, uncomment the following
  * line to set OPT properly */
-#define HASH 2
+#define OPT 1
 
 typedef struct __DETAIL_ENTRY {
 

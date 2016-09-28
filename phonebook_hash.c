@@ -3,7 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 
-#include "phonebook_hash.h"
+#include "phonebook_opt.h"
 
 /* FILL YOUR OWN IMPLEMENTATION HERE! */
 entry *findName(char lastName[], entry *pHead)
