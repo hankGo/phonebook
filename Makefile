@@ -2,6 +2,7 @@ CC ?= gcc
 CFLAGS_common ?= -Wall -std=gnu99
 CFLAGS_orig = -O0
 CFLAGS_opt  = -O0
+CFLAGS_hash = -O0
 
 EXEC = phonebook_orig phonebook_opt phonebook_hash
 all: $(EXEC)
@@ -19,7 +20,7 @@ phonebook_opt: $(SRCS_common) phonebook_opt.c phonebook_opt.h
 		$(SRCS_common) $@.c
 
 phonebook_hash: $(SRCS_common) phonebook_hash.c phonebook_hash.h
-	$(CC) $(CFLAGS_common) $(CFLAGS_opt) \
+	$(CC) $(CFLAGS_common) $(CFLAGS_hash) \
 		-DIMPL="\"$@.h\"" -o $@ \
 		$(SRCS_common) $@.c		
 		
